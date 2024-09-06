@@ -1,0 +1,21 @@
+body {
+    margin: 0;
+    font-family: Noto Sans KR, sans-serif;
+    line-height: normal;
+}
+.sectionTitle {
+    font-family: Black Han Sans, sans-serif;
+    font-weight:400;
+}
+.aboutme_filed{
+    display:flex;
+}
+.aboutme_label {
+    font-weight: 700;
+    margin-bottom:.5rem;
+    font-size:1.25rem;
+}
+.aboutme_value {
+    font-weight: 400;
+    font-size:1rem;
+}

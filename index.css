@@ -1,0 +1,235 @@
+
+        /* 기본 스타일 */
+        body {
+            margin: 0;
+            font-family: 'Noto Sans', sans-serif;
+        }
+
+        header {
+            background-color: #333;
+            padding: 20px 0;
+            color: white;
+            text-align: center;
+            position: fixed;
+            top: 0;
+            width: 100%;
+            z-index: 1000;
+        }
+
+        header .logo {
+            font-size: 24px;
+            font-weight: bold;
+        }
+
+        nav ul {
+            list-style-type: none;
+            padding: 0;
+        }
+
+        nav ul li {
+            display: inline;
+            margin-right: 15px;
+        }
+
+        nav ul li a {
+            color: white;
+            text-decoration: none;
+            font-size: 16px;
+        }
+
+        .hero {
+            background: url('images/background.jpg'); /* 배경 이미지 삽입 */
+            background-size: cover;
+            background-position: center;
+            height: 100vh;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            flex-direction: column;
+            color: white;
+            text-align: center;
+        }
+
+        .hero h1 {
+            font-size: 48px;
+            margin: 0;
+        }
+
+        .hero p {
+            font-size: 18px;
+            margin: 10px 0;
+        }
+
+        .hero a {
+            display: inline-block;
+            padding: 10px 20px;
+            background-color: #FF5722;
+            color: white;
+            text-decoration: none;
+            border-radius: 5px;
+            margin-top: 20px;
+        }
+
+        .about-section {
+            max-width:1200px;
+            margin:0 auto;
+            padding: 80px 20px;
+            text-align: center;
+            
+        }
+
+        .about-section h2 {
+            font-size: 48px;
+            font-weight:700;
+            margin-bottom: 20px;
+        }
+        .info-box {
+            max-width:1200px;
+            margin:0 auto;
+            display:grid;
+            grid-template-columns: repeat(3, 1fr);
+            justify-content: space-between;
+            gap:20px;
+            text-align: left;
+        }
+        .info-item {
+            width:300px;
+            margin: 0 auto;
+            padding:20px;
+            border-radius:10px;
+            margin-bottom:20px;
+            display: flex;
+            align-items: center;
+            justify-content: flex-start;
+        }
+        .info-item i {
+            margin-right:20px;
+            font-size:40px;
+            margin-bottom:10px;
+            display:inline-block;
+        }
+
+        .info-box div h3 {
+            font-size: 20px;
+            margin-bottom: 10px;
+        }
+
+        .info-box div p {
+            margin: 5px 0;
+        }
+   /*Skills 섹션 스타일 추가 */
+
+.skills-section {
+    padding: 80px 20px;
+    text-align: center;
+    background-color: #FFD700;
+}
+
+.skills-section h2 {
+    font-size: 36px;
+    margin-bottom: 30px;
+}
+
+.skills-container {
+    max-width:1200px;
+    margin:0 auto;
+    display: flex;
+    justify-content: space-around;
+    gap:20px;
+    flex-wrap: wrap;
+}
+
+.skill-card {
+    background-color: white;
+    border-radius: 10px;
+    padding: 20px;
+    width: 300px;
+    text-align: center;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    margin-bottom: 20px;
+}
+
+.skill-card h3 {
+    font-size: 24px;
+    margin-bottom: 20px;
+    color: #FF6347;
+}
+
+.skill-icons {
+    display:flex;
+    justify-content: space-between;
+}
+.skill-icons img {
+    width: 100%;
+    height: auto;
+    margin: 10px 0;
+}
+
+/*  프로젝트 섹션 추가*/
+.projects-section {
+    padding: 80px 20px;
+    background-color: #2C7CDA;
+    text-align: center;
+}
+.projects-container {
+    max-width: 1200px;
+    margin:0 auto;
+    display:flex;
+    flex-wrap:wrap;
+    justify-content: center;
+    gap:20px;
+}
+.project-card {
+    background-color: white;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    overflow: hidden;
+    display: flex;
+    flex-direction: row;
+    max-width: 800px;
+}
+
+.project-image img {
+    max-width: 300px;
+    object-fit: cover;
+}
+
+.project-details {
+    padding: 20px;
+    text-align: left;
+}
+
+.project-details h3 {
+    font-size: 24px;
+    font-weight: bold;
+}
+
+.project-details p {
+    margin: 10px 0;
+    font-size: 16px;
+}
+
+.project-details ul {
+    list-style-type: none;
+    padding: 0;
+    margin-top: 20px;
+}
+
+.project-details ul li {
+    margin-bottom: 10px;
+}
+
+.project-details ul li strong {
+    font-weight: bold;
+}
+
+.project-details .btn {
+    display: inline-block;
+    padding: 10px 20px;
+    background-color: #333;
+    color: white;
+    text-decoration: none;
+    border-radius: 5px;
+    margin-top: 10px;
+    font-size: 14px;
+}
