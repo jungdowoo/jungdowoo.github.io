@@ -12,22 +12,22 @@
 </head>
 <body>
     <header>
-        <div class="logo">신입 웹개발자 정도우의 포트폴리오입니다.</div>
+        <div class="logo" >신입 웹개발자 정도우의 포트폴리오입니다.</div>
         <nav>
             <ul>
-                <li><a href="#">Home</a></li>
-                <li><a href="#">About</a></li>
-                <li><a href="#">Skills</a></li>
-                <li><a href="#">Projects</a></li>
-                <li><a href="#">Contact</a></li>
+                <li><a href="#" onclick="scrollToSection(event, 'home-section')">Home</a></li>
+                <li><a href="#" onclick="scrollToSection(event, 'about-section')">About</a></li>
+                <li><a href="#" onclick="scrollToSection(event, 'skills-section')">Skills</a></li>
+                <li><a href="#" onclick="scrollToSection(event, 'projects-section')">Projects</a></li>
+                <li><a href="#" onclick="scrollToSection(event, 'archiving-section')">archiving</a></li>
             </ul>
         </nav>
     </header>
-    <section class="hero">
-        <h1>- 정도우 -</h1>
+    <section class="hero" id="home-section">
+        <!-- <h1>- 정도우 -</h1>
         <p>신입 웹 개발자 포트폴리오</p>
         <p>안녕하세요.<br>끝 없이 공부하는 풀스택 개발자 정도우입니다.</p>
-        <a href="#about-section">더 알아보기 ↓</a>
+        <a href="#about-section">더 알아보기 ↓</a> -->
     </section>
     <section class="about-section" id="about-section">
         <h2 class="sectionTitle">ABOUT ME</h2>
@@ -78,7 +78,7 @@
     </div>
     </section>
 
-    <section class="skills-section" id=""skills-section>
+    <section class="skills-section" id="skills-section">
         <h2 class="sectionTitle">Skills</h2>
         <div class="skills-container">
         <!-- Frontend-->
@@ -103,7 +103,7 @@
 </section>
 
 <section class="projects-section" id="projects-section">
-    <div class="sectionTitle"> PROJECTS</div>
+    <h2 class="sectionTitle"> PROJECTS</h2>
     <div class="project-container">
         <div class="project-card">
             <div class="project-image">
@@ -113,17 +113,55 @@
                 <h3>저스트 아트</h3>
                 <p>2024.09 (1인 개인 프로젝트)</p>
                 <p>저스트 아트는 엄청난 상승세를 보이는 버튜버, 웹 소설표지, 게임캐릭터 일러스트등 커미션 시장을 작가와 고객을 연결해주는 중계 사이트입니다.</p>
-                <a href="https://github.com/hjcgdj/timebox" class="btn">자세히 보기</a>
+                <a href="https://jungdowoo.store/" class="btn">자세히 보기</a>
                     <ul>
-                        <li><strong>GitHub:</strong> <a href="https://github.com/hjcgdj/timebox">github.com/hjcgdj/timebox</a></li>
-                        <li><strong>Frontend:</strong> Next.js, Sass</li>
-                        <li><strong>Backend:</strong> Next.js, Supabase</li>
-                        <li><strong>Database:</strong> PostgreSQL</li>
-                        <li><strong>Deployment:</strong> Vercel, Supabase</li>
+                        <li><strong>GitHub:</strong> <a href="https://github.com/jungdowoo">https://github.com/jungdowoo</a></li>
+                        <li><strong>Frontend:</strong> TypeScript,React</li>
+                        <li><strong>Backend:</strong> Spring Boot</li>
+                        <li><strong>Database:</strong> MySQL</li>
+                        <!-- <li><strong>Deployment:</strong> Vercel, Supabase</li> -->
                     </ul>
             </div>
         </div>
     </div>
 </section>
+
+<section class="archiving-section" id="archiving-section">
+    <h2 class="sectionTitle">ARCHIVING</h2>
+    <div class="archiving-container">
+        <div class="archiving-card">
+            <div class="archiving-logo">
+                <img src="images/github.webp" alt="GitHub Logo">
+            </div>
+            <div class="archiving-content">
+                <h3>GitHub</h3>
+                <p><a href="https://github.com/jungdowoo">https://github.com/jungdowoo</a></p>
+                <p>소스 코드 저장소</p>
+            </div>
+        </div>
+    </div>
+</section>
+<section class="footer-section" id="footer-section">
+    <div class="footer-container">
+        <p>©2024. Jung Do Woo.</p>
+    </div>
+</section>
+
+
+<script>
+    // JavaScript로 특정 섹션으로 스크롤하는 함수
+    function scrollToSection(event, sectionId) {
+            event.preventDefault(); // 기본 링크 동작을 막음
+            const section = document.getElementById(sectionId); // 섹션 ID로 엘리먼트 찾기
+            const yOffset = -50; // 여유 공간 설정 (필요한 만큼 조절 가능)
+            const yPosition = section.getBoundingClientRect().top + window.pageYOffset + yOffset;
+
+            // 부드럽게 스크롤
+            window.scrollTo({
+                top: yPosition,
+                behavior: 'smooth' // 부드럽게 이동하는 옵션
+            });
+        }
+</script>
 </body>
 </html>

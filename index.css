@@ -36,9 +36,12 @@
             text-decoration: none;
             font-size: 16px;
         }
+        html {
+            scroll-behavior: smooth;
+        }
 
         .hero {
-            background: url('images/background.jpg'); /* 배경 이미지 삽입 */
+            background: url('images/background.png'); /* 배경 이미지 삽입 */
             background-size: cover;
             background-position: center;
             height: 100vh;
@@ -126,7 +129,7 @@
 }
 
 .skills-section h2 {
-    font-size: 36px;
+    font-size: 48px;
     margin-bottom: 30px;
 }
 
@@ -187,6 +190,7 @@
     display: flex;
     flex-direction: row;
     max-width: 800px;
+    margin:0 auto;
 }
 
 .project-image img {
@@ -232,4 +236,60 @@
     border-radius: 5px;
     margin-top: 10px;
     font-size: 14px;
+}
+.sectionTitle {
+    font-size:48px;
+}
+
+.archiving-section{
+    padding: 80px 20px;
+    background-color: #333;
+    color: #fff;
+    text-align: center;
+}
+.archiving-container {
+    max-width: 1200px;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-around;
+    gap: 20px;
+    flex-wrap: wrap;
+}
+.archiving-card {
+    background-color: #fff;
+    color: #333;
+    border-radius: 10px;
+    width: 420px;
+    height:220px;
+    text-align: center;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    padding: 20px;
+    margin-bottom: 20px;
+}
+
+.archiving-logo img {
+    width: 246px;
+    height: auto;
+    margin-bottom: 20px;
+}
+
+.archiving-content h3 {
+    font-size: 24px;
+    margin-bottom: 10px;
+}
+
+.archiving-content p {
+    font-size: 16px;
+    margin: 5px 0;
+}
+
+.archiving-content a {
+    color: #2C7CDA;
+    text-decoration: none;
+    font-weight: bold;
+}
+.footer-section {
+    background:#ffffff;
+    padding: 3rem 0;
+    text-align: center;
 }
